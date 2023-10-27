@@ -44,7 +44,7 @@ const handleSubmit=(e)=>{
 }, [isLoggedin, navigate]);
 
   return (
-    <form className=" bg-white max-w-[350px] flex flex-col items-center  min-h-[413px] border-black border-[2px]  mt-[60px] m-auto">
+    <form className=" bg-white max-w-[350px] flex flex-col items-center  shadow-xl border-[1px]   mt-[60px] m-auto">
       <div className="bg-gray-800 text-white p-3 w-[100%] ">
       <h1 className="text-2xl text-center ">Sign In</h1>
 
@@ -63,19 +63,19 @@ const handleSubmit=(e)=>{
         <label htmlFor="password" className="text-lg">Password</label>
         <input type="password" id="password" className="block w-full p-2 border border-black" name="password" onChange={handleChange} />
       </section>
-      <section className="mt-5 w-[100%]">
-      <section onClick={handleSubmit} className="bg-white  shadow-2xl border-[2px]    hover:bg-gray-300 mt-4 text-center h-10 flex justify-center align-center">
+      <section className="mt-6 w-[100%]">
+      <section onClick={handleSubmit} className="bg-white  shadow-3xl border-[2px]    hover:bg-gray-300 mt-4 text-center h-10 flex justify-center align-center">
         <button  className="  text-xl text-black {
           
-        }]  p-[10px] font-normal text-sm font-thin font-mono   hover:text-black text-center h-[100%] ">Signin</button>
+        }]  p-[12px] font-normal text-xs font-semibold font-mono   hover:text-black text-center h-[100%]">Signin</button>
       </section>
-      <section >
-      <GoogleOAuthProvider clientId="566485793596-lgbkpea2jdiktsc31s6485kalsgk7f3h.apps.googleusercontent.com">
+      <section className="flex justify-center" >
+        
+        <GoogleOAuthProvider  clientId="566485793596-lgbkpea2jdiktsc31s6485kalsgk7f3h.apps.googleusercontent.com">
                 <GoogleLogin 
-                size="large" 
-                shape="square"
-                ux_mode="popup"
-
+                width={346}
+                
+                size="large"
             onSuccess={credentialResponse => {
               const decoded = jwtDecode(credentialResponse.credential);
               sessionStorage.setItem("token",credentialResponse.credential)
@@ -88,9 +88,6 @@ const handleSubmit=(e)=>{
             }}
           />
         </GoogleOAuthProvider>
-
-     
-    
         </section>
     
 
