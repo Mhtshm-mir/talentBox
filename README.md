@@ -14,7 +14,7 @@
 freeCodeCamp is a community of people from all around the world who are learning to code together. 
 
 ## Features
-- Browse different Web Dev course  .
+- Browse different web dev courses  
 - User authentication and google login functionality.
 
 
