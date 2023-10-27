@@ -4,8 +4,6 @@
 
 - [About](#about)
 - [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
 - [Tech Stack](#technologies-used)
 - [Deployment](#deployment)
 
