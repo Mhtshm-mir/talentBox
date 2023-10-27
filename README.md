@@ -24,6 +24,8 @@ Deployed Link:- https://653bddc5783fbf1c8d573747--effulgent-llama-c04a04.netlify
 
 ## Tech Stack
 - React
+- Redux
+- React Router
 - Tailwind Css
 - Node
 - Express
