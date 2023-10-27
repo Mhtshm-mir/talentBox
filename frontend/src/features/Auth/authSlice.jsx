@@ -16,7 +16,7 @@ const initialState = {
 export const authentication = createAsyncThunk('/signin',async(user,{rejectWithValue})=>{
     const {name,email,password} = user
     try{
-        const res = await axios.post("http://localhost:4000/signin", {name, email, password });
+        const res = await axios.post("https://gleaming-bat-nightshirt.cyclic.app/signin", {name, email, password });
         return res.data;
     }
     catch(err){

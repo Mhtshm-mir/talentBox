@@ -1,7 +1,7 @@
 import {createSlice,createAsyncThunk} from "@reduxjs/toolkit"
 import axios from "axios"
 export const courses = createAsyncThunk("courses",async(rejectWithValue)=>{
-    const res = await axios.get("http://localhost:4000/course");
+    const res = await axios.get("https://gleaming-bat-nightshirt.cyclic.app/course");
      try{
         return res.data;
     }
